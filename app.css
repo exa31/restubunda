@@ -1,0 +1,360 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.card, #contact .card-contacts, #product .card-products {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  margin: 0;
+}
+
+.btn-primary {
+  color: #F8C794;
+  background-color: #3C366B;
+  width: 10rem;
+  height: 3rem;
+  font-size: larger;
+  font-weight: bolder;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem 0.1rem;
+  padding: 1rem;
+  transition: 0.15s;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+}
+
+.btn-primary:hover {
+  color: #3C366B;
+  background-color: #F8C794;
+  width: 10rem;
+  height: 3rem;
+  font-size: larger;
+  font-weight: bolder;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem 0.1rem;
+  padding: 1rem;
+  transition: 0.15s;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+}
+
+.btn-second {
+  color: #3C366B;
+  background-color: #F8C794;
+  width: 10rem;
+  height: 3rem;
+  font-size: larger;
+  font-weight: bolder;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem 0.1rem;
+  padding: 1rem;
+  transition: 0.15s;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+}
+
+.btn-second:hover {
+  color: #F8C794;
+  background-color: #3C366B;
+  width: 10rem;
+  height: 3rem;
+  font-size: larger;
+  font-weight: bolder;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem 0.1rem;
+  padding: 1rem;
+  transition: 0.15s;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+}
+
+.background {
+  background-color: #FFBE86;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.navbar .logo {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding-left: 2rem;
+  font-family: "Oleo Script", system-ui;
+  font-size: x-large;
+  text-decoration: none;
+}
+.navbar .toggle-nav {
+  display: none;
+}
+.navbar .right a {
+  text-align: center;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 700;
+  padding-right: 2rem;
+  font-size: large;
+  text-decoration: none;
+  transition: 0.15s;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+}
+.navbar .right a:hover {
+  color: #E74C3C;
+}
+
+.name {
+  font-size: 50px;
+  margin: 0.5rem;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-image: url("img/header.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#header .content-header {
+  padding: 2rem 2rem 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 0.2rem solid brown;
+}
+#header .text-header {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: larger;
+}
+
+#about {
+  padding: 5rem;
+  color: #7B5E7B;
+  background-color: rgba(255, 255, 255, 0.9333333333);
+  display: flex;
+  align-items: center;
+}
+#about .content-about {
+  width: 50%;
+}
+#about .content-about .name {
+  margin-left: 0;
+}
+#about .content-about .description {
+  text-align: justify;
+  width: 80%;
+  font-size: larger;
+}
+#about .img-header {
+  margin: 0 auto;
+}
+
+#product {
+  background-color: #7B5E7B;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+#product .product-header {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+#product .card-products .product-type {
+  max-width: 500px;
+  width: 500px;
+  background-color: white;
+  border-radius: 1rem;
+  transition-duration: 0.2s;
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.541);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+#product .card-products .product-type img {
+  transition: 0.5s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#product .card-products .product-type:hover {
+  color: black;
+}
+#product .card-products .product-type:hover img {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+#product .card-products .name-product {
+  font-weight: 700;
+  font-size: 2rem;
+}
+#product .card-products .img-product {
+  max-width: 100%;
+  width: 50vw;
+}
+#product .card-products .description-product {
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 2rem;
+}
+
+#contact {
+  text-align: center;
+  background-image: url("https://www.alcon.com/sites/g/files/rbvwei496/files/2019-03/contact_header.jpg");
+  background-size: cover;
+  color: black;
+}
+#contact .card-contacts {
+  gap: 10rem;
+  text-align: start;
+  padding: 3rem 5rem;
+}
+#contact .card-contacts iframe {
+  max-width: 100%;
+  border-radius: 2rem;
+  margin: auto;
+}
+#contact .card-contacts .contact-description {
+  background-color: white;
+  border-radius: 2rem;
+  margin: auto;
+  padding: 2rem;
+  max-width: 100%;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+#contact .card-contacts .contact-description h1 {
+  margin: 0.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+#contact .card-contacts .contact-description .contact-item {
+  display: flex;
+  align-items: center;
+}
+#contact .card-contacts .contact-description .contact-item .icon {
+  max-width: 50px;
+  margin-right: 10px;
+}
+#contact .card-contacts .contact-description .contact-item p {
+  font: size 90%;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar .toggle-nav {
+    padding-right: 2rem;
+    display: block;
+  }
+  .navbar .toggle-nav i {
+    font-size: 1.5rem;
+  }
+  .navbar .toggle-nav .openNav {
+    display: none;
+  }
+  .navbar .toggle-nav .closeNav {
+    display: none;
+  }
+  .navbar .toggle-nav .active {
+    display: flex;
+  }
+  .navbar .right {
+    position: absolute;
+    background-color: #F8C794;
+    right: 0;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+  }
+  .navbar .show-nav {
+    height: 159px;
+  }
+  #about {
+    justify-content: center;
+    padding: 2rem;
+  }
+  #about .content-about {
+    width: 100%;
+    text-align: center;
+  }
+  #about .content-about .name {
+    margin-left: 0;
+  }
+  #about .content-about .description {
+    width: 90%;
+    font-size: larger;
+  }
+  .img-header {
+    display: none;
+  }
+  .card-products {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-contacts {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}/*# sourceMappingURL=app.css.map */

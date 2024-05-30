@@ -64,6 +64,11 @@ body {
 .background {
     background-color: #FFBE86;
 }
+
+.active {
+    color: $red-color;
+}
+
 .navbar {
     height: 50px;
     width: 100%;
@@ -73,13 +78,18 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 2;
-    .logo {
-        width: fit-content;
-        margin: 0;
-        padding-left:2rem;
-        font-family: "Oleo Script", system-ui;
-        font-size: x-large;
-        text-decoration: none;
+    .logo-section {
+        .logo {
+            width: fit-content;
+            margin: 0;
+            padding-left:2rem;
+            font-family: "Oleo Script", system-ui;
+            font-size: x-large;
+            text-decoration: none;
+        }
+        .logo:active {
+            color: $indigo-color;
+        }
     }
     .toggle-nav {
         display: none;
@@ -272,7 +282,7 @@ body {
             .closeNav { 
                 display: none;
             }
-            .active {
+            .active-nav {
                 display: flex;
                 }
         }

@@ -105,6 +105,10 @@ body {
   background-color: #FFBE86;
 }
 
+.active {
+  color: #E74C3C;
+}
+
 .navbar {
   height: 50px;
   width: 100%;
@@ -115,7 +119,7 @@ body {
   align-items: center;
   z-index: 2;
 }
-.navbar .logo {
+.navbar .logo-section .logo {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0;
@@ -123,6 +127,9 @@ body {
   font-family: "Oleo Script", system-ui;
   font-size: x-large;
   text-decoration: none;
+}
+.navbar .logo-section .logo:active {
+  color: #3C366B;
 }
 .navbar .toggle-nav {
   display: none;
@@ -309,7 +316,7 @@ body {
   .navbar .toggle-nav .closeNav {
     display: none;
   }
-  .navbar .toggle-nav .active {
+  .navbar .toggle-nav .active-nav {
     display: flex;
   }
   .navbar .right {

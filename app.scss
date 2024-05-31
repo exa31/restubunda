@@ -108,7 +108,7 @@ body {
             width: max-content;
             font-weight: 700;
             padding-right: 2rem;
-            font-size: x-large;
+            font-size: large;
             text-decoration: none;
             transition: .15s;
             margin: .5rem;
@@ -198,6 +198,7 @@ body {
 
         .product-type {
             max-width: 500px;
+            width: 100%;
             background-color: white;
             border-radius: 1rem;
             transition-duration: .2s;
@@ -221,12 +222,12 @@ body {
 
         .product-type:hover {
             color: black;
+            img {
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
+            }
         }
 
-        img {
-            filter: grayscale(0);
-            -webkit-filter: grayscale(0);
-        }
     }
 
     .name-product {

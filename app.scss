@@ -89,7 +89,7 @@ body {
             margin: 0;
             padding-left: 2rem;
             font-family: "Oleo Script", system-ui;
-            font-size: x-large;
+            font-size: xx-large;
             text-decoration: none;
         }
 
@@ -108,7 +108,7 @@ body {
             width: max-content;
             font-weight: 700;
             padding-right: 2rem;
-            font-size: large;
+            font-size: x-large;
             text-decoration: none;
             transition: .15s;
             margin: .5rem;
@@ -198,7 +198,6 @@ body {
 
         .product-type {
             max-width: 500px;
-            width: 500px;
             background-color: white;
             border-radius: 1rem;
             transition-duration: .2s;
@@ -222,28 +221,28 @@ body {
 
         .product-type:hover {
             color: black;
-
-            img {
-                filter: grayscale(0);
-                -webkit-filter: grayscale(0);
-            }
         }
 
-        .name-product {
-            font-weight: 700;
-            font-size: 2rem;
+        img {
+            filter: grayscale(0);
+            -webkit-filter: grayscale(0);
         }
+    }
 
-        .img-product {
-            max-width: 100%;
-            width: 50vw;
-        }
+    .name-product {
+        font-weight: 700;
+        font-size: 2rem;
+    }
 
-        .description-product {
-            font-weight: 400;
-            font-size: 1.25rem;
-            padding: 2rem;
-        }
+    .img-product {
+        max-width: 100%;
+        width: 50vw;
+    }
+
+    .description-product {
+        font-weight: 400;
+        font-size: 1.25rem;
+        padding: 2rem;
     }
 }
 
@@ -270,7 +269,7 @@ body {
             border-radius: 2rem;
             margin: auto;
             padding: 2rem;
-            max-width: 100%;
+            width: auto;
 
             h1 {
                 margin: .5rem;
@@ -293,7 +292,7 @@ body {
                 }
 
                 p {
-                    font: size 90%;
+                    font-size: x-large;
                 }
             }
         }
@@ -381,20 +380,10 @@ body {
     #product {
         .card-products {
             @extend .card;
-    
+
             .product-type {
-                max-width: 500px;
-                width: 500px;
-                background-color: white;
-                border-radius: 1rem;
-                transition-duration: .2s;
-                padding: 1rem;
                 color: rgb(0, 0, 0);
-                -webkit-border-radius: 1rem;
-                -moz-border-radius: 1rem;
-                -ms-border-radius: 1rem;
-                -o-border-radius: 1rem;
-    
+
                 img {
                     transition: none;
                     filter: none;
@@ -403,10 +392,22 @@ body {
                     -moz-transition: none;
                     -ms-transition: none;
                     -o-transition: none;
-}
+                }
             }
         }
-        
+
     }
 
+}
+
+@media screen and (max-width: 900px) {
+    #contact {
+        .card-contacts {
+            .contact-item {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }

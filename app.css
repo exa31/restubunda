@@ -125,7 +125,7 @@ body {
   margin: 0;
   padding-left: 2rem;
   font-family: "Oleo Script", system-ui;
-  font-size: x-large;
+  font-size: xx-large;
   text-decoration: none;
 }
 .navbar .logo-section .logo:active {
@@ -140,7 +140,7 @@ body {
   width: max-content;
   font-weight: 700;
   padding-right: 2rem;
-  font-size: large;
+  font-size: x-large;
   text-decoration: none;
   transition: 0.15s;
   margin: 0.5rem;
@@ -217,7 +217,6 @@ body {
 }
 #product .card-products .product-type {
   max-width: 500px;
-  width: 500px;
   background-color: white;
   border-radius: 1rem;
   transition-duration: 0.2s;
@@ -240,19 +239,19 @@ body {
 #product .card-products .product-type:hover {
   color: black;
 }
-#product .card-products .product-type:hover img {
+#product .card-products img {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
 }
-#product .card-products .name-product {
+#product .name-product {
   font-weight: 700;
   font-size: 2rem;
 }
-#product .card-products .img-product {
+#product .img-product {
   max-width: 100%;
   width: 50vw;
 }
-#product .card-products .description-product {
+#product .description-product {
   font-weight: 400;
   font-size: 1.25rem;
   padding: 2rem;
@@ -279,7 +278,7 @@ body {
   border-radius: 2rem;
   margin: auto;
   padding: 2rem;
-  max-width: 100%;
+  width: auto;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
@@ -299,7 +298,7 @@ body {
   margin-right: 10px;
 }
 #contact .card-contacts .contact-description .contact-item p {
-  font: size 90%;
+  font-size: x-large;
 }
 
 @media screen and (max-width: 900px) {
@@ -365,17 +364,7 @@ body {
     align-items: center;
   }
   #product .card-products .product-type {
-    max-width: 500px;
-    width: 500px;
-    background-color: white;
-    border-radius: 1rem;
-    transition-duration: 0.2s;
-    padding: 1rem;
     color: rgb(0, 0, 0);
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
   }
   #product .card-products .product-type img {
     transition: none;
@@ -385,5 +374,10 @@ body {
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  #contact .card-contacts .contact-item p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=app.css.map */

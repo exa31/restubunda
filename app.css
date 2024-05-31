@@ -364,4 +364,26 @@ body {
     flex-direction: column-reverse;
     align-items: center;
   }
+  #product .card-products .product-type {
+    max-width: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 1rem;
+    transition-duration: 0.2s;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+  #product .card-products .product-type img {
+    transition: none;
+    filter: none;
+    -webkit-filter: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+  }
 }/*# sourceMappingURL=app.css.map */

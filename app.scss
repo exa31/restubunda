@@ -1,14 +1,15 @@
 $light-collor: #F8C794;
-$indigo-color:#3C366B;
-$gray-color:#4A5568;
-$light-gray:#dce2ec;
-$red-color:#E74C3C;
-$font-stack:Helvetica, sans-serif;
-@mixin color($color, $bgcolor:red) {
+$indigo-color: #3C366B;
+$gray-color: #4A5568;
+$light-gray: #dce2ec;
+$red-color: #E74C3C;
+$font-stack: Helvetica, sans-serif;
+
+@mixin color($color, $bgcolor: red) {
     color: $color;
     background-color: $bgcolor;
     height: 100vh;
-    }
+}
 
 * {
     scroll-behavior: smooth;
@@ -23,7 +24,7 @@ $font-stack:Helvetica, sans-serif;
     font-weight: bolder;
     border: none;
     border-radius: .5rem;
-    margin: 2rem .1rem ;
+    margin: 2rem .1rem;
     padding: 1rem;
     transition: .15s;
     -webkit-border-radius: .5rem;
@@ -49,14 +50,17 @@ body {
 
 
 .btn-primary {
-    @include btn-default($light-collor,$indigo-color);
+    @include btn-default($light-collor, $indigo-color);
 }
+
 .btn-primary:hover {
-    @include btn-default($indigo-color,$light-collor);
+    @include btn-default($indigo-color, $light-collor);
 }
+
 .btn-second {
     @include btn-default($indigo-color, $light-collor)
 }
+
 .btn-second:hover {
     @include btn-default($light-collor, $indigo-color)
 }
@@ -78,28 +82,32 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+
     .logo-section {
         .logo {
             width: fit-content;
             margin: 0;
-            padding-left:2rem;
+            padding-left: 2rem;
             font-family: "Oleo Script", system-ui;
             font-size: x-large;
             text-decoration: none;
         }
+
         .logo:active {
             color: $indigo-color;
         }
     }
+
     .toggle-nav {
         display: none;
     }
+
     .right {
         a {
             text-align: center;
             width: max-content;
             font-weight: 700;
-            padding-right:2rem;
+            padding-right: 2rem;
             font-size: large;
             text-decoration: none;
             transition: .15s;
@@ -109,7 +117,8 @@ body {
             -moz-transition: .15s;
             -ms-transition: .15s;
             -o-transition: .15s;
-} 
+        }
+
         a:hover {
             color: $red-color;
         }
@@ -130,12 +139,14 @@ body {
     background-image: url("img/header.jpg");
     background-position: center;
     background-size: cover;
+
     .content-header {
         padding: 2rem 2rem .5rem;
         margin-bottom: 1rem;
         text-align: center;
         border-bottom: .2rem solid brown;
     }
+
     .text-header {
         width: 60%;
         margin: 0 auto;
@@ -151,19 +162,23 @@ body {
     background-color: #ffffffee;
     display: flex;
     align-items: center;
+
     .content-about {
         width: 50%;
+
         .name {
             margin-left: 0;
         }
+
         .description {
             text-align: justify;
             width: 80%;
             font-size: larger
         }
     }
+
     .img-header {
-        margin: 0 auto;    
+        margin: 0 auto;
     }
 }
 
@@ -172,12 +187,15 @@ body {
     text-align: center;
     padding: 2rem;
     color: white;
+
     .product-header {
         font-weight: 700;
         font-size: 2.5rem;
     }
+
     .card-products {
         @extend .card;
+
         .product-type {
             max-width: 500px;
             width: 500px;
@@ -190,31 +208,37 @@ body {
             -moz-border-radius: 1rem;
             -ms-border-radius: 1rem;
             -o-border-radius: 1rem;
+
             img {
-                transition:.5s ;
+                transition: .5s;
                 filter: grayscale(100%);
                 -webkit-filter: grayscale(100%);
-                -webkit-transition:.5s ;
-                -moz-transition:.5s ;
-                -ms-transition:.5s ;
-                -o-transition:.5s ;
-}
-}
+                -webkit-transition: .5s;
+                -moz-transition: .5s;
+                -ms-transition: .5s;
+                -o-transition: .5s;
+            }
+        }
+
         .product-type:hover {
             color: black;
+
             img {
                 filter: grayscale(0);
                 -webkit-filter: grayscale(0);
-}
+            }
         }
+
         .name-product {
             font-weight: 700;
             font-size: 2rem;
         }
+
         .img-product {
             max-width: 100%;
             width: 50vw;
         }
+
         .description-product {
             font-weight: 400;
             font-size: 1.25rem;
@@ -228,38 +252,46 @@ body {
     background-image: url("https://www.alcon.com/sites/g/files/rbvwei496/files/2019-03/contact_header.jpg");
     background-size: cover;
     color: black;
+
     .card-contacts {
         @extend .card;
         gap: 10rem;
         text-align: start;
         padding: 3rem 5rem;
-        iframe  {
+
+        iframe {
             max-width: 100%;
             border-radius: 2rem;
             margin: auto;
-}
+        }
+
         .contact-description {
             background-color: white;
             border-radius: 2rem;
             margin: auto;
             padding: 2rem;
             max-width: 100%;
+
             h1 {
                 margin: .5rem;
                 font-weight: 700;
                 font-size: 2.5rem;
             }
+
             -webkit-border-radius: 2rem;
             -moz-border-radius: 2rem;
             -ms-border-radius: 2rem;
             -o-border-radius: 2rem;
+
             .contact-item {
                 display: flex;
                 align-items: center;
+
                 .icon {
                     max-width: 50px;
                     margin-right: 10px;
                 }
+
                 p {
                     font: size 90%;
                 }
@@ -273,19 +305,24 @@ body {
         .toggle-nav {
             padding-right: 2rem;
             display: block;
+
             i {
-                font-size:1.5rem;
+                font-size: 1.5rem;
             }
+
             .openNav {
                 display: none;
             }
-            .closeNav { 
+
+            .closeNav {
                 display: none;
             }
+
             .active-nav {
                 display: flex;
-                }
+            }
         }
+
         .right {
             position: absolute;
             background-color: #F8C794;
@@ -296,40 +333,80 @@ body {
             flex-direction: column;
             height: 0;
             transition: .5s;
-            overflow:hidden;
+            overflow: hidden;
             -webkit-transition: .5s;
             -moz-transition: .5s;
             -ms-transition: .5s;
             -o-transition: .5s;
-}
+        }
+
         .show-nav {
             height: 159px;
         }
     }
+
     #about {
         justify-content: center;
         padding: 2rem;
+
         .content-about {
             width: 100%;
             text-align: center;
+
             .name {
                 margin-left: 0;
             }
+
             .description {
                 width: 90%;
                 font-size: larger
             }
         }
     }
+
     .img-header {
         display: none;
     }
+
     .card-products {
         flex-direction: column;
         align-items: center;
     }
+
     .card-contacts {
         flex-direction: column-reverse;
         align-items: center;
     }
+
+    #product {
+        .card-products {
+            @extend .card;
+    
+            .product-type {
+                max-width: 500px;
+                width: 500px;
+                background-color: white;
+                border-radius: 1rem;
+                transition-duration: .2s;
+                padding: 1rem;
+                color: rgb(0, 0, 0);
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+    
+                img {
+                    transition: none;
+                    filter: none;
+                    -webkit-filter: none;
+                    -webkit-transition: none;
+                    -moz-transition: none;
+                    -ms-transition: none;
+                    -o-transition: none;
+}
+            }
+        }
+        
+    }
+
 }

@@ -19,9 +19,7 @@ $(document).ready(function(){
     
         //agar pada saat scrolling tidak membuat hover tampil secara tidak benar
         $(this).css("cursor", "default")
-    
-        const windowWidth = $(window).width();
-    
+        
         if (currentScroll > 0)    {
             $('.navBar').css('backgroundColor', '#E74C3C')
         } else  {
